@@ -14,9 +14,19 @@ namespace Examenpr.Servicios
     internal class OperativaImplementacion : OperativaInterfaz
 
     {
+        public void borrarElemento(List<cubdto> listaAntigua)
+        {
+            throw new NotImplementedException();
+        }
+
         public void darAltaCubiertos(List<cubdto> listaAntigua)
         {
             listaAntigua.Add(crearCubierto());
+        }
+
+        public void modificarCantidad(List<cubdto> listaAntigua)
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -40,10 +50,12 @@ namespace Examenpr.Servicios
             codigoElemento = (idElemento + nombreElemento);
             Console.WriteLine(codigoElemento);
             Console.WriteLine("Introduzca descripcion del cubierto");
-           descripcionElemento = Console.ReadLine();
+            descripcionElemento = Console.ReadLine();
             Console.WriteLine("Introduzca cantidad de cubiertos: ");
             cantidadElemento = Convert.ToInt32(Console.ReadLine());
             cubdto cubierto = new cubdto(idElemento, nombreElemento, codigoElemento, descripcionElemento, cantidadElemento);
             return cubierto;
         }
+    }
+}
 

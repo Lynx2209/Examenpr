@@ -22,7 +22,7 @@ namespace Examenpr.Dtos
         /// @author JL - 13/12/2023
         /// </summary>
         public cubdto()
-        {
+        { }
         /// <summary>
         /// métodos get y set que forman una estructura con caracteristicas que identifican a cada elemento añadido
         /// @author JL - 13/12/2023
@@ -32,7 +32,7 @@ namespace Examenpr.Dtos
         public string CodigoElemento { get => codigoElemento; set => codigoElemento = value; }
         public string DescripcionElemento { get => descripcionElemento; set => descripcionElemento = value; }
         public int CantidadElemento { get => cantidadElemento; set => cantidadElemento = value; }
-
+    
         /// <summary>
         /// Constructor al cual se le llamara cuando se le haga una copia (new) de los elementos que lo componen
         /// @author JL - 13/12/2023

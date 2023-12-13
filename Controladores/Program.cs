@@ -60,7 +60,7 @@ namespace Examenpr.Controladores
                     case 4:
                         Console.WriteLine("Se ejecuta caso 4 ");
                         oi.modificarCantidad(listaCubiertos);
-                        break
+                        break;
                     default:
                         Console.WriteLine("Introduzca una opcion valida");
                         break;
